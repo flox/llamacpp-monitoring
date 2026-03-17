@@ -4,6 +4,7 @@ version = 1
 prometheus.pkg-path = "prometheus"
 grafana.pkg-path = "grafana"
 curl.pkg-path = "curl"
+jq.pkg-path = "jq"
 llamacpp-flox-monitoring.store-path = "/nix/store/s297bkawd0fg0niqjzqamly68pq57gyk-llamacpp-flox-monitoring-0.9.1"
 
 [hook]
