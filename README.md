@@ -10,6 +10,9 @@ LLAMACPP_HOST=192.168.0.126 flox activate -s
 
 # Monitor llama.cpp on localhost (default)
 flox activate -s
+
+# Reset all cached configs and data (clean slate)
+RESET=1 flox activate -s
 ```
 
 Then open:
@@ -35,6 +38,7 @@ Override any variable at activation time: `VAR=value flox activate -s`
 | `GF_SERVER_HTTP_ADDR` | `0.0.0.0` | Grafana listen address |
 | `GF_SERVER_HTTP_PORT` | `3000` | Grafana listen port |
 | `GF_SECURITY_ADMIN_PASSWORD` | `admin` | Grafana admin password |
+| `RESET` | `0` | Set to `1` to wipe cached configs/data and regenerate from scratch |
 
 ### Host sync
 
