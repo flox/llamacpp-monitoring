@@ -25,7 +25,7 @@
       }
     },
     "hook": {
-      "on-activate": "  . llamacpp-monitoring-init\n"
+      "on-activate": "  if [ \"${RESET:-0}\" = \"1\" ]; then\n    echo \":: RESET=1 — wiping cached configs and data...\"\n    echo \":: WARNING: If services are running, restart them after activation\"\n    rm -rf \"$FLOX_ENV_CACHE/grafana\" \"$FLOX_ENV_CACHE/prometheus\" \"$FLOX_ENV_CACHE/config\"\n  fi\n\n  . llamacpp-monitoring-init\n"
     },
     "options": {},
     "services": {

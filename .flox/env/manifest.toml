@@ -10,6 +10,12 @@ llamacpp-monitoring.systems = ["x86_64-linux", "x86_64-darwin", "aarch64-darwin"
 
 [hook]
 on-activate = '''
+  if [ "${RESET:-0}" = "1" ]; then
+    echo ":: RESET=1 — wiping cached configs and data..."
+    echo ":: WARNING: If services are running, restart them after activation"
+    rm -rf "$FLOX_ENV_CACHE/grafana" "$FLOX_ENV_CACHE/prometheus" "$FLOX_ENV_CACHE/config"
+  fi
+
   . llamacpp-monitoring-init
 '''
 
