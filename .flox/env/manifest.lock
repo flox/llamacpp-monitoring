@@ -1,0 +1,464 @@
+{
+  "lockfile-version": 1,
+  "manifest": {
+    "version": 1,
+    "install": {
+      "curl": {
+        "pkg-path": "curl"
+      },
+      "grafana": {
+        "pkg-path": "grafana"
+      },
+      "llamacpp-flox-monitoring": {
+        "store-path": "/nix/store/s297bkawd0fg0niqjzqamly68pq57gyk-llamacpp-flox-monitoring-0.9.1"
+      },
+      "prometheus": {
+        "pkg-path": "prometheus"
+      }
+    },
+    "hook": {
+      "on-activate": "  . llamacpp-monitoring-init\n"
+    },
+    "options": {},
+    "services": {
+      "grafana": {
+        "command": "llamacpp-monitoring-grafana"
+      },
+      "prometheus": {
+        "command": "llamacpp-monitoring-prometheus"
+      }
+    }
+  },
+  "packages": [
+    {
+      "install_id": "llamacpp-flox-monitoring",
+      "store_path": "/nix/store/s297bkawd0fg0niqjzqamly68pq57gyk-llamacpp-flox-monitoring-0.9.1",
+      "system": "aarch64-darwin",
+      "priority": 5
+    },
+    {
+      "install_id": "llamacpp-flox-monitoring",
+      "store_path": "/nix/store/s297bkawd0fg0niqjzqamly68pq57gyk-llamacpp-flox-monitoring-0.9.1",
+      "system": "aarch64-linux",
+      "priority": 5
+    },
+    {
+      "install_id": "llamacpp-flox-monitoring",
+      "store_path": "/nix/store/s297bkawd0fg0niqjzqamly68pq57gyk-llamacpp-flox-monitoring-0.9.1",
+      "system": "x86_64-darwin",
+      "priority": 5
+    },
+    {
+      "install_id": "llamacpp-flox-monitoring",
+      "store_path": "/nix/store/s297bkawd0fg0niqjzqamly68pq57gyk-llamacpp-flox-monitoring-0.9.1",
+      "system": "x86_64-linux",
+      "priority": 5
+    },
+    {
+      "attr_path": "curl",
+      "broken": false,
+      "derivation": "/nix/store/wvl7hqcz6qzm3898h5m9k21s1llym462-curl-8.18.0.drv",
+      "description": "Command line tool for transferring files with URL syntax",
+      "install_id": "curl",
+      "license": "curl",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2fc6539b481e1d2569f25f8799236694180c0993",
+      "name": "curl-8.18.0",
+      "pname": "curl",
+      "rev": "2fc6539b481e1d2569f25f8799236694180c0993",
+      "rev_count": 953160,
+      "rev_date": "2026-02-23T12:05:20Z",
+      "scrape_date": "2026-02-25T04:46:02.030715Z",
+      "stabilities": [
+        "unstable",
+        "staging",
+        "stable"
+      ],
+      "unfree": false,
+      "version": "8.18.0",
+      "outputs_to_install": [
+        "bin",
+        "man"
+      ],
+      "outputs": {
+        "bin": "/nix/store/p8kxfnihxlh5yww8q3lhl79l2hjpgkia-curl-8.18.0-bin",
+        "dev": "/nix/store/fvbxx52pb9ysccni2l4x2qxcjc18java-curl-8.18.0-dev",
+        "devdoc": "/nix/store/443kr90fa3bm3bnw1b1k8b7fq0gqls4x-curl-8.18.0-devdoc",
+        "man": "/nix/store/nd89abc0mnjp36izxbqg75134gqg80rz-curl-8.18.0-man",
+        "out": "/nix/store/720lfjb95xm6bpv2jp52pd393as7c9qx-curl-8.18.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "curl",
+      "broken": false,
+      "derivation": "/nix/store/znw6g6hn63d1a6j5pwd02cb45r3g83zy-curl-8.18.0.drv",
+      "description": "Command line tool for transferring files with URL syntax",
+      "install_id": "curl",
+      "license": "curl",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2fc6539b481e1d2569f25f8799236694180c0993",
+      "name": "curl-8.18.0",
+      "pname": "curl",
+      "rev": "2fc6539b481e1d2569f25f8799236694180c0993",
+      "rev_count": 953160,
+      "rev_date": "2026-02-23T12:05:20Z",
+      "scrape_date": "2026-02-25T05:24:01.603294Z",
+      "stabilities": [
+        "unstable",
+        "staging",
+        "stable"
+      ],
+      "unfree": false,
+      "version": "8.18.0",
+      "outputs_to_install": [
+        "bin",
+        "bin",
+        "man",
+        "man"
+      ],
+      "outputs": {
+        "bin": "/nix/store/prc6siw40hnjbc201cds2jd7cn7ibpq3-curl-8.18.0-bin",
+        "debug": "/nix/store/gl8k4f3iigz9f4660h08ck8lnbjklf93-curl-8.18.0-debug",
+        "dev": "/nix/store/m01lq6jhxj71h71f3ywnvv0fknjh9402-curl-8.18.0-dev",
+        "devdoc": "/nix/store/d3hgm17n6lxv7lr39r4320xfsp2sjpjs-curl-8.18.0-devdoc",
+        "man": "/nix/store/fzs1dnalcjamwakdzvvy2v4a6sbmjbn7-curl-8.18.0-man",
+        "out": "/nix/store/ibgp7n0ap1zfvfda87kq04qx8n3m1w9y-curl-8.18.0"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "curl",
+      "broken": false,
+      "derivation": "/nix/store/602mkdpx5vcpzclxk28x3cb28cl1h25n-curl-8.18.0.drv",
+      "description": "Command line tool for transferring files with URL syntax",
+      "install_id": "curl",
+      "license": "curl",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2fc6539b481e1d2569f25f8799236694180c0993",
+      "name": "curl-8.18.0",
+      "pname": "curl",
+      "rev": "2fc6539b481e1d2569f25f8799236694180c0993",
+      "rev_count": 953160,
+      "rev_date": "2026-02-23T12:05:20Z",
+      "scrape_date": "2026-02-25T06:09:08.610366Z",
+      "stabilities": [
+        "unstable",
+        "staging",
+        "stable"
+      ],
+      "unfree": false,
+      "version": "8.18.0",
+      "outputs_to_install": [
+        "bin",
+        "man"
+      ],
+      "outputs": {
+        "bin": "/nix/store/l4zjs5q4kp09qx7l9kjm44njnjdqz1nc-curl-8.18.0-bin",
+        "dev": "/nix/store/z9p4mip0pp3f7a3f4zway65karvv3dxl-curl-8.18.0-dev",
+        "devdoc": "/nix/store/qbjdy1ajks397wg8zih0pxf1yn058cx0-curl-8.18.0-devdoc",
+        "man": "/nix/store/slyhki7625n2jfb5mbk625a0m245g3ir-curl-8.18.0-man",
+        "out": "/nix/store/a1s45lwdrkqdg7i54367ha5qj06s3hy2-curl-8.18.0"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "curl",
+      "broken": false,
+      "derivation": "/nix/store/x7hls4932gggjg59r8950nksz2an5fvl-curl-8.18.0.drv",
+      "description": "Command line tool for transferring files with URL syntax",
+      "install_id": "curl",
+      "license": "curl",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2fc6539b481e1d2569f25f8799236694180c0993",
+      "name": "curl-8.18.0",
+      "pname": "curl",
+      "rev": "2fc6539b481e1d2569f25f8799236694180c0993",
+      "rev_count": 953160,
+      "rev_date": "2026-02-23T12:05:20Z",
+      "scrape_date": "2026-02-25T07:00:10.311891Z",
+      "stabilities": [
+        "unstable",
+        "staging",
+        "stable"
+      ],
+      "unfree": false,
+      "version": "8.18.0",
+      "outputs_to_install": [
+        "bin",
+        "bin",
+        "man",
+        "man"
+      ],
+      "outputs": {
+        "bin": "/nix/store/50bwm2f9bzx1vn4fbn2azgx76pqngzc2-curl-8.18.0-bin",
+        "debug": "/nix/store/pb149k0z749g8pqfwl0my7kkyrvpbsdm-curl-8.18.0-debug",
+        "dev": "/nix/store/mxylb81fv1n7skrdlrxnpbzf344mkhy4-curl-8.18.0-dev",
+        "devdoc": "/nix/store/jq23gszsik1dhdznp09rydaw4cbvbqav-curl-8.18.0-devdoc",
+        "man": "/nix/store/skq7kivsvp0g5c1jpk1qan8mmy2virvz-curl-8.18.0-man",
+        "out": "/nix/store/i59cbsr9zwy57hp41pa3wg1cbzm0yjpr-curl-8.18.0"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "grafana",
+      "broken": false,
+      "derivation": "/nix/store/r6yra7mm3dwg481y12l7384vgjankd3y-grafana-12.3.3.drv",
+      "description": "Gorgeous metric viz, dashboards & editors for Graphite, InfluxDB & OpenTSDB",
+      "install_id": "grafana",
+      "license": "AGPL-3.0-only",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2fc6539b481e1d2569f25f8799236694180c0993",
+      "name": "grafana-12.3.3",
+      "pname": "grafana",
+      "rev": "2fc6539b481e1d2569f25f8799236694180c0993",
+      "rev_count": 953160,
+      "rev_date": "2026-02-23T12:05:20Z",
+      "scrape_date": "2026-02-25T04:46:03.063532Z",
+      "stabilities": [
+        "unstable",
+        "staging",
+        "stable"
+      ],
+      "unfree": false,
+      "version": "12.3.3",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/qi11hac49rnjndlf8cm9hrc0lyfbkb5k-grafana-12.3.3"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "grafana",
+      "broken": false,
+      "derivation": "/nix/store/7vw9jaz2warvaq1j7bixda6b4jhyl4fq-grafana-12.3.3.drv",
+      "description": "Gorgeous metric viz, dashboards & editors for Graphite, InfluxDB & OpenTSDB",
+      "install_id": "grafana",
+      "license": "AGPL-3.0-only",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2fc6539b481e1d2569f25f8799236694180c0993",
+      "name": "grafana-12.3.3",
+      "pname": "grafana",
+      "rev": "2fc6539b481e1d2569f25f8799236694180c0993",
+      "rev_count": 953160,
+      "rev_date": "2026-02-23T12:05:20Z",
+      "scrape_date": "2026-02-25T05:24:03.475838Z",
+      "stabilities": [
+        "unstable",
+        "staging",
+        "stable"
+      ],
+      "unfree": false,
+      "version": "12.3.3",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/vah06scyw6p495xnnx8pk2h8z6bd89hh-grafana-12.3.3"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "grafana",
+      "broken": false,
+      "derivation": "/nix/store/4sxqnjq4a71pi0zsvk1x6f587wh8d58l-grafana-12.3.3.drv",
+      "description": "Gorgeous metric viz, dashboards & editors for Graphite, InfluxDB & OpenTSDB",
+      "install_id": "grafana",
+      "license": "AGPL-3.0-only",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2fc6539b481e1d2569f25f8799236694180c0993",
+      "name": "grafana-12.3.3",
+      "pname": "grafana",
+      "rev": "2fc6539b481e1d2569f25f8799236694180c0993",
+      "rev_count": 953160,
+      "rev_date": "2026-02-23T12:05:20Z",
+      "scrape_date": "2026-02-25T06:09:09.640278Z",
+      "stabilities": [
+        "unstable",
+        "staging",
+        "stable"
+      ],
+      "unfree": false,
+      "version": "12.3.3",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/54c6lz83x98wlbb1awpdd7p4archh8xn-grafana-12.3.3"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "grafana",
+      "broken": false,
+      "derivation": "/nix/store/qy0rfhi4zycvknx0rrd983l5xhsv8cjq-grafana-12.3.3.drv",
+      "description": "Gorgeous metric viz, dashboards & editors for Graphite, InfluxDB & OpenTSDB",
+      "install_id": "grafana",
+      "license": "AGPL-3.0-only",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2fc6539b481e1d2569f25f8799236694180c0993",
+      "name": "grafana-12.3.3",
+      "pname": "grafana",
+      "rev": "2fc6539b481e1d2569f25f8799236694180c0993",
+      "rev_count": 953160,
+      "rev_date": "2026-02-23T12:05:20Z",
+      "scrape_date": "2026-02-25T07:00:12.469888Z",
+      "stabilities": [
+        "unstable",
+        "staging",
+        "stable"
+      ],
+      "unfree": false,
+      "version": "12.3.3",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/hd4d675rx9538l8fwfxa018kdlqmfnqp-grafana-12.3.3"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "prometheus",
+      "broken": false,
+      "derivation": "/nix/store/bwwc42bwxwl7h930k8srxvcmb6x0mb55-prometheus-3.9.1.drv",
+      "description": "Service monitoring system and time series database",
+      "install_id": "prometheus",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2fc6539b481e1d2569f25f8799236694180c0993",
+      "name": "prometheus-3.9.1",
+      "pname": "prometheus",
+      "rev": "2fc6539b481e1d2569f25f8799236694180c0993",
+      "rev_count": 953160,
+      "rev_date": "2026-02-23T12:05:20Z",
+      "scrape_date": "2026-02-25T04:46:41.212330Z",
+      "stabilities": [
+        "unstable",
+        "staging",
+        "stable"
+      ],
+      "unfree": false,
+      "version": "3.9.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "cli": "/nix/store/dlfljzibybg5z0p5xcprwfhhlczdmb03-prometheus-3.9.1-cli",
+        "doc": "/nix/store/432n4h3j9fl2ysmy51q53g3ff2pfdpks-prometheus-3.9.1-doc",
+        "out": "/nix/store/w79nycjq5ksy68wy9hzzkbdsyxzg88nc-prometheus-3.9.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "prometheus",
+      "broken": false,
+      "derivation": "/nix/store/kjqfkqvvg91vamiqq3wphwsaxg05v32g-prometheus-3.9.1.drv",
+      "description": "Service monitoring system and time series database",
+      "install_id": "prometheus",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2fc6539b481e1d2569f25f8799236694180c0993",
+      "name": "prometheus-3.9.1",
+      "pname": "prometheus",
+      "rev": "2fc6539b481e1d2569f25f8799236694180c0993",
+      "rev_count": 953160,
+      "rev_date": "2026-02-23T12:05:20Z",
+      "scrape_date": "2026-02-25T05:24:57.674900Z",
+      "stabilities": [
+        "unstable",
+        "staging",
+        "stable"
+      ],
+      "unfree": false,
+      "version": "3.9.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "cli": "/nix/store/gwpyhr011yvadcq3jn064d9p0kwbgcq9-prometheus-3.9.1-cli",
+        "doc": "/nix/store/mc0km3h7x95lqr2wg5iv3v0mlx6ps6dv-prometheus-3.9.1-doc",
+        "out": "/nix/store/a534y43djc8syapnd15wwfppilj82kdg-prometheus-3.9.1"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "prometheus",
+      "broken": false,
+      "derivation": "/nix/store/w9n8a2897lbb6mk9f1ik62a01wzq04hx-prometheus-3.9.1.drv",
+      "description": "Service monitoring system and time series database",
+      "install_id": "prometheus",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2fc6539b481e1d2569f25f8799236694180c0993",
+      "name": "prometheus-3.9.1",
+      "pname": "prometheus",
+      "rev": "2fc6539b481e1d2569f25f8799236694180c0993",
+      "rev_count": 953160,
+      "rev_date": "2026-02-23T12:05:20Z",
+      "scrape_date": "2026-02-25T06:09:47.094389Z",
+      "stabilities": [
+        "unstable",
+        "staging",
+        "stable"
+      ],
+      "unfree": false,
+      "version": "3.9.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "cli": "/nix/store/vnwpz0j491m10ia8351jhr632fsm7zq3-prometheus-3.9.1-cli",
+        "doc": "/nix/store/yw7zhbdzrmx8zdw5sb0wy3pw4f4g47ja-prometheus-3.9.1-doc",
+        "out": "/nix/store/7aq6p11kwv8mz399x4zyd42hqn34qdys-prometheus-3.9.1"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "prometheus",
+      "broken": false,
+      "derivation": "/nix/store/apbhhv0bsaqvg9azcan3f0z38ha5ypf2-prometheus-3.9.1.drv",
+      "description": "Service monitoring system and time series database",
+      "install_id": "prometheus",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2fc6539b481e1d2569f25f8799236694180c0993",
+      "name": "prometheus-3.9.1",
+      "pname": "prometheus",
+      "rev": "2fc6539b481e1d2569f25f8799236694180c0993",
+      "rev_count": 953160,
+      "rev_date": "2026-02-23T12:05:20Z",
+      "scrape_date": "2026-02-25T07:01:13.567321Z",
+      "stabilities": [
+        "unstable",
+        "staging",
+        "stable"
+      ],
+      "unfree": false,
+      "version": "3.9.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "cli": "/nix/store/kq7w69l1fg049iay7acdfaydk8vmc7qy-prometheus-3.9.1-cli",
+        "doc": "/nix/store/sdk2dxjm1zyklwa7l0kaa6hdskr8w556-prometheus-3.9.1-doc",
+        "out": "/nix/store/kxhpynlhd8yd143p3mmzl52bjwf1f3b4-prometheus-3.9.1"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    }
+  ]
+}

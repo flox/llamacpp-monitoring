@@ -1,0 +1,18 @@
+version = 1
+
+[install]
+prometheus.pkg-path = "prometheus"
+grafana.pkg-path = "grafana"
+curl.pkg-path = "curl"
+llamacpp-flox-monitoring.store-path = "/nix/store/s297bkawd0fg0niqjzqamly68pq57gyk-llamacpp-flox-monitoring-0.9.1"
+
+[hook]
+on-activate = '''
+  . llamacpp-monitoring-init
+'''
+
+[services]
+prometheus.command = "llamacpp-monitoring-prometheus"
+grafana.command = "llamacpp-monitoring-grafana"
+
+[options]
