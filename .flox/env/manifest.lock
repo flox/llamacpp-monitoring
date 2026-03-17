@@ -12,8 +12,13 @@
       "jq": {
         "pkg-path": "jq"
       },
-      "llamacpp-flox-monitoring": {
-        "store-path": "/nix/store/s297bkawd0fg0niqjzqamly68pq57gyk-llamacpp-flox-monitoring-0.9.1"
+      "llamacpp-monitoring": {
+        "pkg-path": "flox/llamacpp-flox-monitoring",
+        "systems": [
+          "x86_64-linux",
+          "x86_64-darwin",
+          "aarch64-darwin"
+        ]
       },
       "prometheus": {
         "pkg-path": "prometheus"
@@ -33,30 +38,6 @@
     }
   },
   "packages": [
-    {
-      "install_id": "llamacpp-flox-monitoring",
-      "store_path": "/nix/store/s297bkawd0fg0niqjzqamly68pq57gyk-llamacpp-flox-monitoring-0.9.1",
-      "system": "aarch64-darwin",
-      "priority": 5
-    },
-    {
-      "install_id": "llamacpp-flox-monitoring",
-      "store_path": "/nix/store/s297bkawd0fg0niqjzqamly68pq57gyk-llamacpp-flox-monitoring-0.9.1",
-      "system": "aarch64-linux",
-      "priority": 5
-    },
-    {
-      "install_id": "llamacpp-flox-monitoring",
-      "store_path": "/nix/store/s297bkawd0fg0niqjzqamly68pq57gyk-llamacpp-flox-monitoring-0.9.1",
-      "system": "x86_64-darwin",
-      "priority": 5
-    },
-    {
-      "install_id": "llamacpp-flox-monitoring",
-      "store_path": "/nix/store/s297bkawd0fg0niqjzqamly68pq57gyk-llamacpp-flox-monitoring-0.9.1",
-      "system": "x86_64-linux",
-      "priority": 5
-    },
     {
       "attr_path": "curl",
       "broken": false,
@@ -474,6 +455,96 @@
         "doc": "/nix/store/51isxd9mi828n238hj3572vmfx12msp1-jq-1.8.1-doc",
         "man": "/nix/store/lqxm904bymdhvi8fc2l6gpj0n4wq33a8-jq-1.8.1-man",
         "out": "/nix/store/70bwclvic12925zck7za5y9g761l9kkh-jq-1.8.1"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "llamacpp-flox-monitoring",
+      "broken": false,
+      "derivation": "/nix/store/pcyjw3x72rbgc0a7plaw1mp6lyr28dgn-llamacpp-flox-monitoring-0.9.1.drv",
+      "description": "Monitoring stack configuration for llama.cpp (Prometheus + Grafana dashboards and configs)",
+      "install_id": "llamacpp-monitoring",
+      "locked_url": "git@github.com:barstoolbluz/build-llamacpp-flox-monitoring.git?rev=0882084d8e55fb30ee165438bdf9c3a6a13b2e3f",
+      "name": "llamacpp-flox-monitoring-0.9.1",
+      "pname": "llamacpp-flox-monitoring",
+      "rev": "0882084d8e55fb30ee165438bdf9c3a6a13b2e3f",
+      "rev_count": 5,
+      "rev_date": "2026-03-17T00:11:51Z",
+      "scrape_date": "2026-03-17T17:18:56.724438719Z",
+      "stabilities": [
+        "unstable",
+        "staging",
+        "stable"
+      ],
+      "unfree": false,
+      "version": "0.9.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/2mzh58rvw4ha65l5v9lia8kxdk9jwpf0-llamacpp-flox-monitoring-0.9.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "llamacpp-flox-monitoring",
+      "broken": false,
+      "derivation": "/nix/store/cszfwjivc6c294w0i0zzwq8grjms5srd-llamacpp-flox-monitoring-0.9.1.drv",
+      "description": "Monitoring stack configuration for llama.cpp (Prometheus + Grafana dashboards and configs)",
+      "install_id": "llamacpp-monitoring",
+      "locked_url": "git@github.com:barstoolbluz/build-llamacpp-flox-monitoring.git?rev=0882084d8e55fb30ee165438bdf9c3a6a13b2e3f",
+      "name": "llamacpp-flox-monitoring-0.9.1",
+      "pname": "llamacpp-flox-monitoring",
+      "rev": "0882084d8e55fb30ee165438bdf9c3a6a13b2e3f",
+      "rev_count": 5,
+      "rev_date": "2026-03-17T00:11:51Z",
+      "scrape_date": "2026-03-17T17:18:56.724440454Z",
+      "stabilities": [
+        "unstable",
+        "staging",
+        "stable"
+      ],
+      "unfree": false,
+      "version": "0.9.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/p5j7n9rw91a10idp186ynkmv6svh8bp2-llamacpp-flox-monitoring-0.9.1"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "llamacpp-flox-monitoring",
+      "broken": false,
+      "derivation": "/nix/store/rd9nl42lwipaa7m28ajmachyd4hnbpg3-llamacpp-flox-monitoring-0.9.1.drv",
+      "description": "Monitoring stack configuration for llama.cpp (Prometheus + Grafana dashboards and configs)",
+      "install_id": "llamacpp-monitoring",
+      "locked_url": "git@github.com:barstoolbluz/build-llamacpp-flox-monitoring.git?rev=0882084d8e55fb30ee165438bdf9c3a6a13b2e3f",
+      "name": "llamacpp-flox-monitoring-0.9.1",
+      "pname": "llamacpp-flox-monitoring",
+      "rev": "0882084d8e55fb30ee165438bdf9c3a6a13b2e3f",
+      "rev_count": 5,
+      "rev_date": "2026-03-17T00:11:51Z",
+      "scrape_date": "2026-03-17T17:18:56.724441803Z",
+      "stabilities": [
+        "unstable",
+        "staging",
+        "stable"
+      ],
+      "unfree": false,
+      "version": "0.9.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/ybph641yglm3nq8mrw06mkh279zpca90-llamacpp-flox-monitoring-0.9.1"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
